@@ -15,10 +15,10 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <header>
-      <img src="./assets/images/logo.svg" alt="" />
-      <nav>
-        <ul>
+    <header class="header">
+      <img class="header__image" src="./assets/images/logo.svg" alt="" />
+      <nav class="header__nav">
+        <ul class="header__nav__un-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
@@ -28,25 +28,26 @@
       </nav>
     </header>
     <main>
-      <div>
+      <div class="container">
         <img
+          class="container__image"
           src="./assets/images/image-web-3-desktop.jpg"
           alt="Abstract shapes in a 3D form"
         />
-        <div>
+        <div class="container__aside">
           <span>New</span>
-          <div>
+          <div class="container__aside__text-content">
             <span>Hydrogen VS Electric Cars</span>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           </div>
-          <div>
+          <div class="container__aside__text-content">
             <span>The Downsides of AI Artistry</span>
             <p>
               What are the possible adverse effects of on-demand AI image
               generation?
             </p>
           </div>
-          <div>
+          <div class="container__aside__text-content">
             <span>Is VC Funding Drying Up?</span>
             <p>
               Private funding by VC firms is down 50% YOY. We take a look at
@@ -54,8 +55,8 @@
             </p>
           </div>
         </div>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <div>
+        <h1 class="container__headline">The Bright Future of Web 3.0?</h1>
+        <div class="container__cta">
           <p>
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But it is
@@ -63,28 +64,30 @@
           </p>
           <button>read more</button>
         </div>
-        <div>
-          <div>
+        <div class="container__articles">
+          <div class="container__articles__item">
             <img src="./assets/images/image-retro-pcs.jpg" alt="" />
-            <div>
+            <div class="container__articles__item-content">
               <h1>01</h1>
               <strong>Reviving Retro PCs</strong>
               <p>What happens when old PCs are given modern upgrades?</p>
             </div>
           </div>
-          <div>
-            <div>
-              <img src="./assets/images/image-top-laptops.jpg" alt="" />
+          <div class="container__article__item">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" />
+            <div class="container__articles__item-content">
               <h1>02</h1>
               <strong>Top 10 Laptops of 2022</strong>
               <p>Our best picks for various needs and budgets.</p>
             </div>
           </div>
-          <div>
+          <div class="container__article__item">
             <img src="./assets/images/image-gaming-growth.jpg" alt="" />
-            <h1>03</h1>
-            <strong>The Growth of Gaming</strong>
-            <p>How the pandemic has sparked fresh opportunities</p>
+            <div class="container__articles__item-content">
+              <h1>03</h1>
+              <strong>The Growth of Gaming</strong>
+              <p>How the pandemic has sparked fresh opportunities</p>
+            </div>
           </div>
         </div>
       </div>
