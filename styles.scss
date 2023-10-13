@@ -28,3 +28,49 @@ html {
   // 1rem = 10px
   font-size: 62.5%;
 }
+
+body {
+  background-color: $off-white;
+  font-family: $inter;
+}
+
+.header {
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    width: inherit;
+    max-width: 1200px;
+    margin: auto;
+
+    &__nav {
+      &__un-list {
+        display: flex;
+        gap: 3.5rem;
+
+        li {
+          list-style: none;
+        }
+
+        a {
+          font-size: $paragraph;
+          color: $very-dark-blue;
+        }
+
+        a:link,
+        a:visited {
+          text-decoration: none;
+        }
+
+        a:active,
+        a:hover {
+          transition: color 0.15s ease-in-out;
+          color: $primary-red;
+        }
+      }
+    }
+  }
+}
