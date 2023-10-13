@@ -1,0 +1,30 @@
+// Primary colors
+$primary-orange: hsl(35, 77%, 62%);
+$primary-red: hsl(5, 85%, 63%);
+
+// Neutral colors
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-greyish-blue: hsl(236, 13%, 42%);
+$very-dark-blue: hsl(240, 100%, 5%);
+
+// Typography
+$paragraph: 1.5rem;
+$inter: "Inter", sans-serif;
+$regular: 400;
+$bold: 700;
+$extra-bold: 800;
+
+// Global reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  // 1rem = 10px
+  font-size: 62.5%;
+}
