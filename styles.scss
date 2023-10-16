@@ -142,6 +142,43 @@ body {
           }
         }
       }
+
+      &--right {
+        background-color: $very-dark-blue;
+        color: $off-white;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+
+        &-heading {
+          font-size: calc($paragraph * 3);
+          color: $primary-orange;
+        }
+
+        &-copy {
+          padding: 2.5rem 0;
+          border-bottom: 1px $grayish-blue solid;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          span {
+            font-size: 2rem;
+            color: $off-white;
+            font-weight: $bold;
+          }
+
+          p {
+            color: $dark-greyish-blue;
+            font-size: $paragraph;
+            line-height: 3rem;
+          }
+        }
+      }
     }
   }
 }
