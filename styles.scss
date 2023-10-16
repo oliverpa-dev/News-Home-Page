@@ -58,6 +58,7 @@ body {
         a {
           font-size: $paragraph;
           color: $very-dark-blue;
+          transition: color 0.15s ease-in-out;
         }
 
         a:link,
@@ -67,7 +68,6 @@ body {
 
         a:active,
         a:hover {
-          transition: color 0.15s ease-in-out;
           color: $primary-red;
         }
       }
@@ -108,21 +108,23 @@ body {
 
           &-headline {
             font-size: calc($paragraph * 4);
+            max-width: 400px;
           }
 
           &-cta {
+            max-width: 450px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
             p {
-              font-size: $paragraph;
-              line-height: 2rem;
+              line-height: 2.5rem;
+              font-size: 2rem;
             }
 
             button {
               align-self: flex-start;
-              padding: 1.5rem 5rem;
+              padding: 1.5rem 4rem;
               text-transform: uppercase;
               border: none;
               display: inline-block;
@@ -130,6 +132,12 @@ body {
               color: $off-white;
               font-weight: $regular;
               letter-spacing: 5px;
+              transition: background-color 0.15s ease-in-out;
+            }
+
+            button:hover {
+              background-color: $very-dark-blue;
+              cursor: pointer;
             }
           }
         }

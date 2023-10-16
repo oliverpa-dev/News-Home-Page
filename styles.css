@@ -37,6 +37,7 @@ body {
 .header__wrapper__nav__un-list a {
   font-size: 1.5rem;
   color: hsl(240, 100%, 5%);
+  transition: color 0.15s ease-in-out;
 }
 .header__wrapper__nav__un-list a:link,
 .header__wrapper__nav__un-list a:visited {
@@ -44,7 +45,6 @@ body {
 }
 .header__wrapper__nav__un-list a:active,
 .header__wrapper__nav__un-list a:hover {
-  transition: color 0.15s ease-in-out;
   color: hsl(5, 85%, 63%);
 }
 
@@ -80,19 +80,21 @@ body {
 }
 .container__wrapper__top-content--left_copy-headline {
   font-size: 6rem;
+  max-width: 400px;
 }
 .container__wrapper__top-content--left_copy-cta {
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .container__wrapper__top-content--left_copy-cta p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
 }
 .container__wrapper__top-content--left_copy-cta button {
   align-self: flex-start;
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 4rem;
   text-transform: uppercase;
   border: none;
   display: inline-block;
@@ -100,6 +102,11 @@ body {
   color: hsl(36, 100%, 99%);
   font-weight: 400;
   letter-spacing: 5px;
+  transition: background-color 0.15s ease-in-out;
+}
+.container__wrapper__top-content--left_copy-cta button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
