@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 2.5rem;
   width: inherit;
   max-width: 1200px;
   margin: auto;
@@ -52,6 +52,7 @@ body {
   width: 100%;
 }
 .container__wrapper {
+  padding: 0 2.5rem;
   width: inherit;
   max-width: 1200px;
   display: flex;
@@ -68,7 +69,6 @@ body {
 .container__wrapper__top-content--left {
   display: flex;
   flex-direction: column;
-  max-width: 850px;
   gap: 2.5rem;
 }
 .container__wrapper__top-content--left img {
@@ -76,7 +76,6 @@ body {
 }
 .container__wrapper__top-content--left_copy {
   display: flex;
-  flex-direction: row;
   gap: 2.5rem;
 }
 .container__wrapper__top-content--left_copy-headline {
@@ -85,13 +84,11 @@ body {
 }
 .container__wrapper__top-content--left_copy-cta {
   max-width: 425px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .container__wrapper__top-content--left_copy-cta p {
   line-height: 2.5rem;
   font-size: 2rem;
+  margin-bottom: 71px;
 }
 .container__wrapper__top-content--left_copy-cta button {
   align-self: flex-start;
@@ -170,6 +167,50 @@ body {
 .container__wrapper__bottom-content-item p {
   font-size: 1.5rem;
   line-height: 2.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container__wrapper__top-content {
+    flex-wrap: wrap;
+  }
+  .container__wrapper__top-content--left img {
+    width: 100%;
+  }
+  .container__wrapper__top-content--left_copy {
+    justify-content: space-between;
+  }
+  .container__wrapper__top-content--left_copy-cta {
+    max-width: 600px;
+  }
+  .container__wrapper__top-content--right {
+    width: 100%;
+  }
+  .container__wrapper__bottom-content {
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 100%;
+  }
+  .container__wrapper__bottom-content-items {
+    width: 100%;
+  }
+  .container__wrapper__bottom-content-items img {
+    width: 25%;
+  }
+  .container__wrapper__bottom-content-item {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 918px) {
+  .container__wrapper__top-content--left_copy {
+    flex-wrap: wrap;
+  }
+  .container__wrapper__top-content--left_copy-headline {
+    max-width: 100%;
+    font-size: 5.5rem;
+  }
+  .container__wrapper__top-content--left_copy-cta {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

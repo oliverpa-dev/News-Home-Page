@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 0 5rem 0;
+    padding: 5rem 2.5rem;
     width: inherit;
     max-width: 1200px;
     margin: auto;
@@ -79,6 +79,7 @@ body {
   width: 100%;
 
   &__wrapper {
+    padding: 0 2.5rem;
     width: inherit;
     max-width: 1200px;
     display: flex;
@@ -95,7 +96,6 @@ body {
       &--left {
         display: flex;
         flex-direction: column;
-        max-width: 850px;
         gap: 2.5rem;
 
         img {
@@ -104,7 +104,6 @@ body {
 
         &_copy {
           display: flex;
-          flex-direction: row;
           gap: 2.5rem;
 
           &-headline {
@@ -114,13 +113,11 @@ body {
 
           &-cta {
             max-width: 425px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
 
             p {
               line-height: 2.5rem;
               font-size: 2rem;
+              margin-bottom: 71px;
             }
 
             button {
@@ -221,3 +218,75 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    &__wrapper {
+      &__top-content {
+        flex-wrap: wrap;
+
+        &--left {
+          // width: 100%;
+
+          img {
+            width: 100%;
+          }
+
+          &_copy {
+            justify-content: space-between;
+
+            &-cta {
+              max-width: 600px;
+            }
+          }
+        }
+
+        &--right {
+          width: 100%;
+        }
+      }
+
+      &__bottom-content {
+        flex-wrap: wrap;
+        gap: 5rem;
+        width: 100%;
+
+        &-items {
+          width: 100%;
+
+          img {
+            width: 25%;
+          }
+        }
+
+        &-item {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .container {
+    &__wrapper {
+      &__top-content {
+        &--left {
+          &_copy {
+            flex-wrap: wrap;
+
+            &-headline {
+              max-width: 100%;
+              font-size: 5.5rem;
+            }
+
+            &-cta {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 600px - one
