@@ -212,5 +212,17 @@ body {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 680px) {
+  .container__wrapper__top-content--left_copy-headline {
+    font-size: 4rem;
+  }
+  .container__wrapper__top-content--left_copy-cta p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .container__wrapper__top-content--left_copy-cta button {
+    padding: 1rem 2rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
