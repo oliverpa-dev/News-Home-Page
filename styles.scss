@@ -84,7 +84,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    gap: 2.5rem;
+    gap: 5rem;
+    padding-bottom: 5rem;
 
     &__top-content {
       display: flex;
@@ -108,11 +109,11 @@ body {
 
           &-headline {
             font-size: calc($paragraph * 4);
-            max-width: 400px;
+            max-width: 425px;
           }
 
           &-cta {
-            max-width: 450px;
+            max-width: 425px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -177,6 +178,44 @@ body {
             font-size: $paragraph;
             line-height: 3rem;
           }
+        }
+      }
+    }
+
+    &__bottom-content {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-between;
+
+      &-items {
+        display: flex;
+
+        img {
+          width: 25%;
+          object-fit: cover;
+        }
+      }
+
+      &-item {
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h1 {
+          font-size: calc($paragraph * 2);
+          font-weight: $extra-bold;
+          color: $grayish-blue;
+        }
+
+        span {
+          font-size: 2rem;
+          font-weight: $extra-bold;
+        }
+
+        p {
+          font-size: $paragraph;
+          line-height: 2.5rem;
         }
       }
     }

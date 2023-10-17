@@ -57,7 +57,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  gap: 2.5rem;
+  gap: 5rem;
+  padding-bottom: 5rem;
 }
 .container__wrapper__top-content {
   display: flex;
@@ -80,10 +81,10 @@ body {
 }
 .container__wrapper__top-content--left_copy-headline {
   font-size: 6rem;
-  max-width: 400px;
+  max-width: 425px;
 }
 .container__wrapper__top-content--left_copy-cta {
-  max-width: 450px;
+  max-width: 425px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -138,6 +139,37 @@ body {
   color: hsl(236, 13%, 42%);
   font-size: 1.5rem;
   line-height: 3rem;
+}
+.container__wrapper__bottom-content {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+.container__wrapper__bottom-content-items {
+  display: flex;
+}
+.container__wrapper__bottom-content-items img {
+  width: 25%;
+  object-fit: cover;
+}
+.container__wrapper__bottom-content-item {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container__wrapper__bottom-content-item h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: hsl(233, 8%, 79%);
+}
+.container__wrapper__bottom-content-item span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.container__wrapper__bottom-content-item p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
