@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -46,6 +47,10 @@ body {
 .header__wrapper__nav__un-list a:active,
 .header__wrapper__nav__un-list a:hover {
   color: hsl(5, 85%, 63%);
+}
+
+.hide {
+  display: none;
 }
 
 .container {
@@ -212,6 +217,18 @@ body {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 750px) {
+  .container__wrapper__top-content--left_copy-headline {
+    font-size: 4rem;
+  }
+  .container__wrapper__top-content--left_copy-cta p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .container__wrapper__top-content--left_copy-cta button {
+    padding: 1rem 2rem;
+  }
+}
 @media screen and (max-width: 680px) {
   .container__wrapper__top-content--left_copy-headline {
     font-size: 4rem;
@@ -222,6 +239,66 @@ body {
   }
   .container__wrapper__top-content--left_copy-cta button {
     padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__wrapper {
+    position: relative;
+  }
+  .header__wrapper img {
+    z-index: 1;
+  }
+  .header__wrapper button {
+    background-color: hsl(36, 100%, 99%);
+    border: none;
+    font-size: 5rem;
+  }
+  .header__wrapper button:hover {
+    cursor: pointer;
+  }
+  .header__wrapper__nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: transform 1s ease-in-out;
+    transform: translateX(120%);
+    width: 65%;
+    height: 100vh;
+    background-color: hsl(36, 100%, 99%);
+    z-index: 2;
+    padding: 2.5rem;
+    box-shadow: -2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .header__wrapper__nav span {
+    align-self: flex-end;
+    display: inline-block;
+    justify-self: end;
+    margin-bottom: 5rem;
+    font-size: 6rem;
+  }
+  .header__wrapper__nav span:hover {
+    cursor: pointer;
+  }
+  .header__wrapper__nav__un-list {
+    flex-direction: column;
+  }
+  .header__wrapper__nav__un-list li {
+    list-style: none;
+  }
+  .header__wrapper__nav__un-list a {
+    font-size: 1.5rem;
+    color: hsl(240, 100%, 5%);
+    transition: color 0.15s ease-in-out;
+  }
+  .header__wrapper__nav__un-list a:link,
+  .header__wrapper__nav__un-list a:visited {
+    text-decoration: none;
+  }
+  .header__wrapper__nav__un-list a:active,
+  .header__wrapper__nav__un-list a:hover {
+    color: hsl(5, 85%, 63%);
   }
 }
 
