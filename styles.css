@@ -248,12 +248,12 @@ body {
   .header__wrapper img {
     z-index: 1;
   }
-  .header__wrapper button {
+  .header__wrapper span {
     background-color: hsl(36, 100%, 99%);
     border: none;
     font-size: 5rem;
   }
-  .header__wrapper button:hover {
+  .header__wrapper span:hover {
     cursor: pointer;
   }
   .header__wrapper__nav {
